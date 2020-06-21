@@ -1,0 +1,55 @@
+ls - list Befehl: Files in dem derzeitigen Ordner 
+
+pwd - print working directory 
+
+cd - change directory 
+
+git status
+Diser Befehl zeigt den aktuellen Status des Repositories an. 
+
+git config --list
+git config -- global user.name "Git.User"
+git config --global user.email "git.user@gmail.com"
+
+git init 
+Dieser Befehl erstellt ein Git Repository. 
+
+git add 
+Dieser Befehlt fügt Dateien der staging area hinzu; sie sind makiert für die Veränderung.
+
+git rm -f 
+remove force Datei aus der staging area entfernen
+
+git commit -m "My message" 
+Dieser Befehl fügt eine Commit-Nachricht direkt beim Erstellen des commits hinzu.
+
+
+git remote
+Zum hochladen eines Repositories. 
+
+git remote add <alias><url> e.g., git remote add repoName https://github.com/repoName
+Erstellt eine Verbindung zwischen dem momenteanen Repository und dem Repository hinter der URL
+
+git remote rename <alias><new alias> e.g., git remote rename repoName repoNewName
+Umbenennen eines Repositories 
+
+git remote remove <alias> or git remote rm <alias>
+Repository entfernen
+
+
+git clone <url> <alias> e.g., git clone ttps://github.com/repoName repoName
+Zum herunterladen einer vollständigen Kopie eines remote Repository; Versionierung jeder Datei
+
+
+git push origin/<branch> e.g., git push origin/master
+Lokale Änderungen zu dem verbudenen online remote Repo hinzufügen
+origin: Ein Name für den Verweis zu einem anderen Aufbewahrungsort des Repositories
+
+git fetch 
+Eine online Änderung unter Vorbehalt herunterziehen (noch nicht zusammengebunden mit der lokalen Version auf deinem PC) 
+
+git merge origin/<branch>
+Heruntergezogen Änderung mit lokalen PC version zusammenführen 
+
+git pull 
+Ist fetch + merge zusammen: holen die Daten runter und schreiben sie direkt ins lokale Repo 
